@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Teachers' Day</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background: linear-gradient(
+                to bottom,
+                white,
+                #888888,
+                black
+            );
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 45px;
+            text-align: center;
+            margin: 0 0 25px 0;
+
+            text-shadow: 2px 2px 5px black;
+        }
+
+        /* SQUARE VIDEO - 1:1 */
+        .video {
+            width: min(90vw, 700px);
+            aspect-ratio: 1 / 1;
+
+            border-radius: 15px;
+            overflow: hidden;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* PHONE */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            .video {
+                width: 92vw;
+                aspect-ratio: 1 / 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HAPPY TEACHERS' DAY PO SIR, MA'AM, YAH </h1>
+
+    <div class="video">
+
+        <iframe
+            src="https://drive.google.com/file/d/15ePSGmqpi9mSu-1Q7FKjcmiORCFkgO90/preview"
+            allow="autoplay"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</body>
+</html>
